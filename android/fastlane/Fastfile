@@ -47,11 +47,6 @@ platform(:android) do
       UI.error(ex)
     end
   end
-  
-  desc('Download metadata')
-  lane(:metadata_download) do
-    supply init
-  end
 
   desc('Promote from internal to alpha')
   lane(:alpha) do
